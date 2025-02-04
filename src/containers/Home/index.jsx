@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Header from "./components/Header/Header";
-import Sidebar from "./components/Sidebar/Sidebar";
-import Main from "./ui/Main";
-import Content from "./ui/Content";
-import Profile from "./components/Profile/Profile";
-import Stats from "./components/Stats/Stats";
-import Team from "./components/Team/Team";
-import Event from "./components/Event/Event";
+import Header from "../../components/Header/Header";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Main from "../../ui/Main";
+import Content from "../../ui/Content";
+import Profile from "../../components/Profile/Profile";
+import Stats from "../../components/Stats/Stats";
+import Team from "../../components/Team/Team";
+import Event from "../../components/Event/Event";
 
-const App = () => {
+const Home = () => {
   const [darkMode, setdarkMode] = useState(false);
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
 
@@ -21,7 +21,7 @@ const App = () => {
   };
 
   return (
-    <div className={`${darkMode && "dark"} font-quickSand min-h-screen bg-gray-100 dark:bg-gray-900`}>
+    <div className={`${darkMode && "dark"} font-quickSand`}>
       <Header
         toggleDarkMode={toggleDarkMode}
         darkMode={darkMode}
@@ -44,4 +44,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

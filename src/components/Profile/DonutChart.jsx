@@ -1,4 +1,5 @@
 import Chart from "react-apexcharts";
+import Title from "../../ui/Title";
 
 const DonutChart = ({ darkMode }) => {
   const options = {
@@ -6,10 +7,10 @@ const DonutChart = ({ darkMode }) => {
     options: {
       chart: {
         type: "donut",
-        height: 350,
+        height: 300,
       },
-      labels: ["Desktop", "Tablet", "Mobile"],
-      colors: ["#FF5733", "#33FF57", "#3357FF"],
+      labels: ["Costumer Sucess", "Development", "Support"],
+      colors: ["#6A329F", "#33FF57", "#3357FF"],
       legend: {
         position: "bottom",
         labels: {
@@ -38,8 +39,18 @@ const DonutChart = ({ darkMode }) => {
   };
 
   return (
-    <div className="py-6 bg-white rounded-lg p-5 flex dark:bg-gray-600 items-center justify-center">
-      <Chart options={options.options} series={options.series} type="donut" height={290}/>
+    <div className="py-8 bg-white rounded-2xl p-5 flex flex-col dark:bg-gray-600 items-start justify-start">
+      <div>
+        <Title>Demands</Title>
+      </div>
+      <div>
+        <Chart
+          options={options.options}
+          series={options.series}
+          type="donut"
+          height={315}
+        />
+      </div>
     </div>
   );
 };

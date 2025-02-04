@@ -3,7 +3,7 @@ import { shortcutLink } from "../../constants";
 import Title from "../../ui/Title";
 const ShortCuts = () => {
   return (
-    <div className="flex gap-4 flex-col bg-white rounded-lg p-4 dark:bg-gray-600">
+    <div className="flex gap-4 flex-col bg-white rounded-2xl p-4 dark:bg-gray-600">
       <Title>Shortcuts</Title>
 
       {shortcutLink.map((list, index) => (
@@ -11,7 +11,7 @@ const ShortCuts = () => {
           key={index}
           className="flex justify-between items-center cursor-pointer rounded-sm"
         >
-          <div className="flex gap-4 itens-center">
+          <div className="flex gap-2 itens-center">
             <span className="bg-blue-100 p-2 rounded-full w-8 h-8 flex items-center justify-center dark:bg-gray-800 dark:text-gray-300">
               <list.icon />
             </span>

@@ -4,14 +4,14 @@ function BarChart({ darkMode }) {
   const chartConfig = {
     series: [
       {
-        name: "Sales",
-        data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+        name: "Quantity",
+        data: [25, 12,],
       },
     ],
     options: {
       chart: {
         type: "bar",
-        height: 240,
+        height: 350,
         toolbar: {
           show: false,
         },
@@ -45,6 +45,9 @@ function BarChart({ darkMode }) {
           },
         },
         categories: [
+          "Jan",
+          "Feb",
+          "Mar",
           "Apr",
           "May",
           "Jun",
@@ -62,7 +65,7 @@ function BarChart({ darkMode }) {
             colors: darkMode ? "#dddddd" : "#616161",
             fontSize: "12px",
             fontFamily: "inherit",
-            fontWeight: 400,
+            fontWeight: 350,
           },
         },
       },
@@ -90,7 +93,7 @@ function BarChart({ darkMode }) {
   };
 
   return <div className="px-2 pb-0">
-    <Chart options={chartConfig.options} series={chartConfig.series} type="bar" height={240}/>
+    <Chart options={chartConfig.options} series={chartConfig.series} type="bar" height={312}/>
   </div>;
 }
 

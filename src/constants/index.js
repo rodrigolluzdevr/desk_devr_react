@@ -3,10 +3,11 @@ import { GrPlan } from "react-icons/gr";
 import {
   IoIosStats,
   IoIosSettings,
-  IoIosPerson,
-  IoIosPersonAdd,
-  IoIosEyeOff,
-  IoIosLogIn,
+  IoIosAdd ,
+  IoIosCube,
+  IoIosNotifications ,
+  IoIosCheckmarkCircle,
+  IoIosBookmark,
   IoIosLogOut,
 } from "react-icons/io";
 import {
@@ -20,7 +21,8 @@ import {
 import user01 from "../assets/user01.png";
 import user02 from "../assets/user02.png";
 import user03 from "../assets/user03.png";
-
+import user04 from "../assets/user04.webp";
+import user05 from "../assets/rodrigouser.jpg";
 export const links = [
   {
     href: "#",
@@ -40,7 +42,7 @@ export const links = [
   {
     href: "#",
     icon: FaFacebookMessenger,
-    text: "SMS",
+    text: "Chat Team",
     badge: {
       text: "4",
       color: "bg-blue-100 text-blue-800",
@@ -50,61 +52,69 @@ export const links = [
   {
     href: "#",
     icon: FaUsersCog,
-    text: "Usuários",
+    text: "Users",
   },
   {
     href: "#",
     icon: FaListAlt,
-    text: "Produtos",
+    text: "Demands",
   },
   {
     href: "#",
-    icon: IoIosLogIn,
-    text: "Entrar",
+    icon: GoGoal,
+    text: "Goals",
   },
   {
     href: "#",
-    icon: IoIosLogOut,
-    text: "Inscrever-se",
+    icon: IoIosBookmark,
+    text: "Events",
   },
 ];
 
 export const empolyeesData = [
   {
-    title: "Total Empolyees",
-    icon: IoIosPerson,
-    count: 200,
+    title: "Pending demands",
+    icon: IoIosCube,
+    count: 15,
     bgColor: "bg-gray-100",
   },
   {
-    title: "On Leave",
-    icon: IoIosEyeOff,
-    count: 15,
+    title: "Success demands",
+    icon: IoIosCheckmarkCircle,
+    count: 37,
     bgColor: "bg-blue-100",
   },
   {
-    title: "New Joinee",
-    icon: IoIosPersonAdd,
-    count: 25,
-    bgColor: "bg-yellow-100",
+    title: "Outstanding events",
+    icon: IoIosNotifications ,
+    count: 7,
+    bgColor: "bg-blue-100",
   },
 ];
 
 export const shortcutLink = [
   {
-    title: "Metas",
+    title: "Goals",
     icon: GoGoal,
   },
   {
-    title: "Planos",
-    icon: GrPlan,
-  },
-  {
-    title: "Status",
+    title: "Data analysis",
     icon: IoIosStats,
   },
   {
-    title: "Setting",
+    title: "Add demands",
+    icon: IoIosAdd,
+  },
+  {
+    title: "Add goals",
+    icon: IoIosAdd,
+  },
+  {
+    title: "Add events",
+    icon: IoIosAdd,
+  },
+  {
+    title: "Config",
     icon: IoIosSettings,
   },
 ];
@@ -113,16 +123,16 @@ export const users = [
   {
     name: "Robert Fox",
     country: "USA",
-    role: "Python Developer",
+    role: "DevOps Developer",
     image: user01,
-    bgColor: "bg-yellow-100",
+    bgColor: "bg-gray-100",
   },
   {
     name: "Jane Doe",
     country: "UK",
     role: "Frontend Developer",
     image: user02,
-    bgColor: "bg-blue-100",
+    bgColor: "bg-gray-100",
   },
   {
     name: "John Smith",
@@ -135,8 +145,15 @@ export const users = [
     name: "Alice Johnson",
     country: "Australia",
     role: "Full Stack Developer",
-    image: user01,
-    bgColor: "bg-slate-100",
+    image: user04,
+    bgColor: "bg-gray-100",
+  },
+  {
+    name: "Rodrigo Luz",
+    country: "BR",
+    role: "Customer Success Analyst",
+    image: user05,
+    bgColor: "bg-gray-100",
   },
 ];
 
@@ -153,7 +170,12 @@ export const events = [
   },
   {
     date: "20 Sept",
-    title: "Networking Meetup",
+    title: "Networking Meetup USA",
+    description: "Connect with professionals in your field.",
+  },
+  {
+    date: "29 Oct",
+    title: "Networking Meetup BR",
     description: "Connect with professionals in your field.",
   },
 ];
